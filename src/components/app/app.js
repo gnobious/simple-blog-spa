@@ -18,15 +18,15 @@ export default class App extends Component {
         super(props);
         this.state = {
             data : [
-                {label: 'Going to learn React', important:true, id: '1'},
-                {label: 'All is good', important:false, id: '2'},
-                {label: 'Need a break', important:false, id: '3'}
+                {label: 'Going to learn React', important:true, id: 'a4rd'},
+                {label: 'All is good', important:false, id: 'pt8u'},
+                {label: 'Need a break', important:false, id: 'r9y9'}
             ]
         };
         this.deleteItem = this.deleteItem.bind(this);
         this.addItem = this.addItem.bind(this);
 
-        this.maxId = 4;
+        this.randId = (Math.random()+1).toString(36).substring(2,6);
     }
     
     deleteItem(id) {
@@ -43,10 +43,12 @@ export default class App extends Component {
     }
 
     addItem(body){
+            let rId = (Math.random()+1).toString(36).substring(2,6);
+            console.log(`Generated Id: ${rId}`);
         const newItem = {
             label: body,
             important: false,
-            id: this.maxId++
+            id: this.randId = rId
         }
         this.setState(({data}) => {
             const newArr = [...data, newItem];
