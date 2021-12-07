@@ -43,7 +43,7 @@ In this project, I study and practice the following things:
 
 <h2 id="demo">Demo 🎥</h2>
 
-The completed project can be viewed [here](https://gnobious.github.io/simple-blog-spa/ "demo url")
+The completed project can be viewed [here](https://rimerian.github.io/simple-blog-spa/ "demo url")
 
 <h2 id="how-to-use">How to Use 🔧</h2>
 
@@ -60,7 +60,7 @@ From your command line, first clone "simple-blog-spa":
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/gnobious/simple-blog-spa.git
+$ git clone https://github.com/rimerian/simple-blog-spa.git
 
 # Go into the repository
 $ cd simple-blog-spa
